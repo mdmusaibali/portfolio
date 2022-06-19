@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --color-background: black;
+  --color-primary: #eb5757;
+  --color-primary-light: #f28e8e31;
+  --color-primary-dark: #eb3c3c;
+  --color-secondary: #f9bf52;
+  --color-tertiary: #1ab7ea;
+  --color-text-primary: #ffffffe5;
+  --color-text-secondary: #9a989a;
+  --color-nav-hover: #1a1f28;
+  --color-gradient: #303437;
+  --color-dark-gray: #2c323f;
+  --transparent: #111111bf;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  //to remove
+  // color: #ffffff;
+}
+
+body {
+  background-color: black;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+#gradient-outer {
+  height: calc(512px);
+  background: linear-gradient(
+    150deg,
+    var(--color-secondary),
+    var(--color-tertiary),
+    var(--color-primary),
+    var(--color-primary)
+  );
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  filter: blur(8px);
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.gradient-inner {
+  position: absolute;
+  inset: 0px;
+  z-index: 10;
+  -webkit-backdrop-filter: blur(4px) saturate(300%);
+  backdrop-filter: blur(4px) saturate(300%);
+  background: linear-gradient(
+    -12deg,
+    var(--color-background),
+    var(--color-background),
+    transparent
+  );
+}
