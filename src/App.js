@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       {createPortal(
-        <div className="gradient-inner">Test</div>,
+        <div className="gradient-inner"></div>,
         document.getElementById("gradient-outer")
       )}
       <Navigation />
