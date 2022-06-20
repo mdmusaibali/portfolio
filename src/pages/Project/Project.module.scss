@@ -1,0 +1,131 @@
+.section__container {
+  &--element {
+    &--right {
+      display: inline-block;
+      margin-bottom: 2.5rem;
+      padding: 0.8rem 1rem;
+      border-radius: 1rem;
+      transition: all 0.2s ease;
+    }
+  }
+}
+
+.section--project-back-button {
+  font-size: 1.6rem;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  background-color: var(--color-nav-hover);
+  color: var(--color-text-primary);
+  padding: 0.6rem 0.4rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: var(--color-primary-light);
+    padding: 0.8rem 0.6rem;
+  }
+}
+
+.section--project-description {
+  color: var(--color-text-primary);
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+.section--project-details {
+  color: var(--color-text-primary);
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  margin-bottom: 3rem;
+}
+
+.section--project-buttons {
+  margin-bottom: 5rem;
+}
+
+.section--project-buttons-button {
+  font-size: 1.4rem;
+  padding: 0.8rem 1rem;
+  border: none;
+  background-color: var(--color-primary);
+  color: var(--color-text-primary);
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 2rem rgb(0 0 0 / 10%);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+
+  &:hover {
+    box-shadow: 0 1rem 1rem rgb(0 0 0 / 10%);
+    transform: scale(1.05);
+  }
+  &:active {
+    box-shadow: 0 1rem 2rem rgb(0 0 0 / 10%);
+    transform: scale(1);
+  }
+}
+
+.heading__primary {
+  margin-top: 1.4rem;
+  margin-bottom: 0.4rem;
+  color: var(--color-text-primary);
+  font-size: 4.5rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+.heading__secondary {
+  color: var(--color-text-primary);
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  font-weight: 900;
+}
+
+.projects--project-imageDesktop {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem rgb(0 0 0 / 10%);
+  margin-bottom: 2rem;
+}
+
+.u-grid-1-col {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.u-grid-1-col-item {
+  justify-self: center;
+  width: 40%;
+}
+
+.u-grid-2-col {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.u-grid-2-col-item {
+  justify-self: center;
+  width: 70%;
+}
+.section__logo {
+  height: 4rem;
+}
+
+.bg-darkpink {
+  background-color: #f0abfc;
+}
+.bg-teal {
+  background-color: #15aabf;
+}
+.bg-lightgreen {
+  background-color: #b0dc2d;
+}
+.bg-yellowishgolden {
+  background-color: #f6bf60;
+}
+.bg-lightpink {
+  background-color: #ebccd2;
+}
