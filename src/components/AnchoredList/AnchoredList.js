@@ -1,4 +1,3 @@
-import classes from "./AnchoredList.module.scss";
 import { AnchoredListItem } from "./AnchoredListItem";
 export const AnchoredList = (props) => {
   const items = props.items;

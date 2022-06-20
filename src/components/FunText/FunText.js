@@ -18,7 +18,7 @@ export const FunText = () => {
 
   const funTextGenerator = () => {
     setCount((prevCountValue) => {
-      if (prevCountValue == funTexts.length - 1) return 0;
+      if (prevCountValue === funTexts.length - 1) return 0;
       return (prevCountValue += 1);
     });
     setCurrentFunText(funTexts[count]);

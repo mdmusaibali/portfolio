@@ -53,12 +53,13 @@ export const Project = () => {
             marginRight: "0.5rem",
           }}
           target="_blank"
+          rel="noreferrer"
         >
           <button className={classes["section--project-buttons-button"]}>
             Visit
           </button>
         </a>
-        <a href={currentProject.sourceCode} target="_blank">
+        <a href={currentProject.sourceCode} target="_blank" rel="noreferrer">
           <button className={classes["section--project-buttons-button"]}>
             Source code
           </button>
@@ -72,6 +73,7 @@ export const Project = () => {
           className={classes["projects--project-imageDesktop"]}
           src={imageUrl}
           key={Math.random()}
+          alt="Showing how web app looks in desktop"
         />
       ))}
 
@@ -82,6 +84,7 @@ export const Project = () => {
               className={classes["u-grid-1-col-item"]}
               key={Math.random()}
               src={imageUrl}
+              alt="Showing how web app looks in mobile"
             />
           ))}
         </div>
@@ -94,6 +97,7 @@ export const Project = () => {
               className={classes["u-grid-2-col-item"]}
               key={Math.random()}
               src={imageUrl}
+              alt="Showing how web app looks in mobile"
             />
           ))}
         </div>
