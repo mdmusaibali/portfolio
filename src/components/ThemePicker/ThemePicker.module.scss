@@ -1,0 +1,27 @@
+.theme-picker {
+  padding: 1.5rem 2rem;
+
+  &--text {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--color-text-secondary);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: 0.6px;
+  }
+
+  &--items {
+    overflow-x: scroll;
+    white-space: nowrap;
+    text-align: center;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    &--item {
+      display: inline-block;
+      height: 8rem;
+      width: 15rem;
+      background-color: red;
+    }
+  }
+}

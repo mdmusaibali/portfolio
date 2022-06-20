@@ -1,0 +1,1 @@
+To add more themes just go to store/theme-slice and add the theme object in ALL_THEMES array. Thats it!

@@ -1,0 +1,36 @@
+.theme-picker {
+  padding: 1.5rem 2rem;
+
+  &--items {
+    &--item {
+      display: inline-block;
+      background-color: red;
+      cursor: pointer;
+
+      padding: 1.3rem 2rem;
+      border-radius: 0.5rem;
+      &--name {
+        text-align: center;
+        color: black;
+        font-weight: 400;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        letter-spacing: 0.6px;
+      }
+      &--colors {
+        display: flex;
+        justify-content: space-around;
+        gap: 1rem;
+      }
+      &--color {
+        height: 1.5rem;
+        width: 1.5rem;
+        background-color: #00d1b2;
+        border-radius: 50%;
+      }
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+}
