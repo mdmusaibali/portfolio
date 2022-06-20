@@ -27,6 +27,7 @@ const themeSlice = createSlice({
     },
     getThemeFromLocalStorage(state) {
       const retrievedTheme = JSON.parse(localStorage.getItem("theme"));
+      if (!retrievedTheme) return;
       state.currentThemeName = retrievedTheme.themeName;
       state.currentColors = retrievedTheme.currentColors;
       state.allThemes = retrievedTheme.allThemes;
