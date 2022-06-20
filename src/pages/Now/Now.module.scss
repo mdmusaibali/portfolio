@@ -1,0 +1,25 @@
+.header__svg {
+  background-color: transparent;
+  height: 8rem;
+  border-radius: 1.8rem;
+  transform: rotate(-5deg);
+}
+
+.header__svg .shadow {
+  fill: var(--color-background);
+}
+
+.heading__primary {
+  color: var(--color-text-primary);
+  font-size: 4.5rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+  margin-bottom: 1rem;
+}
+.header__text {
+  color: var(--color-text-primary);
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}

@@ -1,0 +1,23 @@
+.header__text {
+  color: var(--color-text-primary);
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+.header__fun-text {
+  display: inline;
+  color: var(--color-primary-dark);
+  font-weight: 400;
+  padding: 0.6rem 1rem;
+  transition: all 0.3s ease;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+
+  &:hover {
+    background-color: var(--color-primary-light);
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}

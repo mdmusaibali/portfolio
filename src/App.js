@@ -15,7 +15,6 @@ function App() {
   useEffect(() => {
     dispatch(themeActions.getThemeFromLocalStorage());
     dispatch(themeActions.changeTheme());
-    console.log("test");
   }, [dispatch]);
   return (
     <div className="App">
@@ -27,7 +26,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate replace to="/home" />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects" element={<Projects />}></Route>
         <Route path="/about" element={<About />} />
         <Route path="/now" element={<Now />} />
       </Routes>
