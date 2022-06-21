@@ -116,12 +116,19 @@
   font-size: 3rem;
   margin-bottom: 0.4rem;
 }
+.icon {
+  transform: translateY(25%);
+}
 .btn__header {
   color: var(--color-text-primary);
   text-decoration: none;
   padding: 0.6rem 0.4rem;
   background-color: var(--color-nav-hover);
   transition: all 0.2s ease;
+
+  @media (max-width: 425px) {
+    padding: 1rem 0.8rem;
+  }
   &:hover {
     background-color: var(--color-primary-light);
     padding: 0.8rem 0.6rem;

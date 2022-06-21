@@ -17,7 +17,11 @@
   transition: all 0.3s ease;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  background-color: var(--color-primary-light);
+
+  @media (max-width: 425px) {
+    background-color: var(--color-primary-light);
+    border-radius: 0.6rem;
+  }
 
   &:hover {
     background-color: var(--color-primary-light);

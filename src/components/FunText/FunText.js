@@ -1,5 +1,6 @@
 import { useState } from "react";
 import classes from "./FunText.module.scss";
+
 export const FunText = (props) => {
   const [currentFunText, setCurrentFunText] = useState("a hard working person");
   const [count, setCount] = useState(0);

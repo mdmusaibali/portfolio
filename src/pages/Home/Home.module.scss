@@ -28,11 +28,15 @@
   padding: 0.6rem 0.4rem;
   background-color: var(--color-nav-hover);
   transition: all 0.2s ease;
+  @media (max-width: 425px) {
+    padding: 1rem 0.8rem;
+  }
   &:hover {
     background-color: var(--color-primary-light);
     padding: 0.8rem 0.6rem;
   }
 }
+
 .btn__header .icon {
   transform: translateY(0.5rem);
   top: 4px;
