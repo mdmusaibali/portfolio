@@ -16,6 +16,11 @@
   letter-spacing: -1px;
   margin-bottom: 1rem;
 }
+.heading__secondary {
+  color: var(--color-text-primary);
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
 
 .btn__header {
   color: var(--color-text-primary);
@@ -30,4 +35,9 @@
 }
 .btn__header .icon {
   transform: translateY(0.5rem);
+  top: 4px;
+}
+.experience--text {
+  font-size: 1.8rem;
+  color: var(--color-text-secondary);
 }

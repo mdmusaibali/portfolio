@@ -1,0 +1,1 @@
+data.js is file responsible for all list items such as lsit of projects and themes.

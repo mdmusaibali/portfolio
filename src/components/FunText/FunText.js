@@ -1,6 +1,6 @@
 import { useState } from "react";
 import classes from "./FunText.module.scss";
-export const FunText = () => {
+export const FunText = (props) => {
   const [currentFunText, setCurrentFunText] = useState("a hard working person");
   const [count, setCount] = useState(0);
 
@@ -25,7 +25,7 @@ export const FunText = () => {
   };
 
   return (
-    <p className={classes["header__text"]}>
+    <p style={props.extraStyles} className={classes["header__text"]}>
       I'm a developer and
       <span className={classes["header__fun-text"]} onClick={funTextGenerator}>
         {currentFunText}

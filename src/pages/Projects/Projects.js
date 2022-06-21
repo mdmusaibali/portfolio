@@ -1,7 +1,11 @@
 import { useSelector } from "react-redux";
-import { AnchoredList } from "../../components/AnchoredList/AnchoredList";
 import { CenterDiv } from "../../components/CenterDiv/CenterDiv";
+import { EmailMe } from "../../components/Contact/EmailMe/EmailMe";
+import { MessageMe } from "../../components/Contact/MessageMe/MessageMe";
+import { Footer } from "../../components/Footer/Footer";
+import { MultiPurposeList } from "../../components/MultiPurposeList/MultiPurposeList";
 import classes from "./Projects.module.scss";
+
 export const Projects = () => {
   const ownProjects = useSelector((store) => store.projects.ownProjects);
   const practiceProjects = useSelector(
@@ -74,7 +78,7 @@ export const Projects = () => {
           Below are few of my very own projects.
         </p>
 
-        <AnchoredList items={ownProjects} />
+        <MultiPurposeList items={ownProjects} anchored={true} />
       </CenterDiv>
 
       <CenterDiv
@@ -91,7 +95,31 @@ export const Projects = () => {
           Below are few of the projects i made while learning stuff.
         </p>
 
-        <AnchoredList items={practiceProjects} />
+        <MultiPurposeList items={practiceProjects} anchored={true} />
+      </CenterDiv>
+
+      <CenterDiv
+        extraStyles={{
+          maxWidth: "calc(1080px)",
+          margin: "0 auto",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "flex-start",
+          gap: "2rem",
+          padding: "20rem 0 15rem 0",
+          borderBottom: "1px solid var(--color-dark-gray)",
+        }}
+      >
+        <EmailMe />
+        <MessageMe />
+      </CenterDiv>
+
+      <CenterDiv
+        extraStyles={{
+          padding: " 6rem 0",
+        }}
+      >
+        <Footer />
       </CenterDiv>
     </>
   );
