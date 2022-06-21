@@ -7,6 +7,7 @@ const themeSlice = createSlice({
     currentThemeName: ALL_THEMES[0].themeName,
     currentColors: ALL_THEMES[0].colors,
     allThemes: ALL_THEMES,
+    themePickerIsOpen: false,
   },
   reducers: {
     changeThemeState(state, action) {
@@ -31,6 +32,9 @@ const themeSlice = createSlice({
       state.currentThemeName = retrievedTheme.themeName;
       state.currentColors = retrievedTheme.currentColors;
       state.allThemes = retrievedTheme.allThemes;
+    },
+    toggleThemePickerIsOpen(state) {
+      state.themePickerIsOpen = !state.themePickerIsOpen;
     },
   },
 });

@@ -1,15 +1,19 @@
-import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
+import { themeActions } from "../../store/theme-slice";
 import { CenterDiv } from "../CenterDiv/CenterDiv";
 import { FlexSB } from "../Flex/FlexSB";
 import { ThemePicker } from "../ThemePicker/ThemePicker";
 import classes from "./Navigation.module.scss";
 
 export const Navigation = () => {
-  const [themePickerIsOpen, setThemePickerIsOpen] = useState(false);
+  const dispatch = useDispatch();
+  const themePickerIsOpen = useSelector(
+    (store) => store.theme.themePickerIsOpen
+  );
 
   const toggleThemePicker = () => {
-    setThemePickerIsOpen((prevState) => (!prevState ? true : false));
+    dispatch(themeActions.toggleThemePickerIsOpen());
   };
 
   return (

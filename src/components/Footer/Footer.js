@@ -1,6 +1,13 @@
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import { themeActions } from "../../store/theme-slice";
 import classes from "./Footer.module.scss";
 export const Footer = () => {
+  const dispatch = useDispatch();
+  const toggleThemePicker = () => {
+    dispatch(themeActions.toggleThemePickerIsOpen());
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <>
       <div className={classes["footer__grid"]}>
@@ -10,14 +17,17 @@ export const Footer = () => {
           </Link>
         </div>
         <div className={classes["footer__grid--element"]}>
-          <a href="#" className={classes["footer__grid--element-link"]}>
+          <Link to="/home" className={classes["footer__grid--element-link"]}>
             Portfolio/Work
-          </a>
+          </Link>
         </div>
         <div className={classes["footer__grid--element"]}>
-          <a href="#" className={classes["footer__grid--element-link"]}>
+          <p
+            onClick={toggleThemePicker}
+            className={classes["footer__grid--element-link"]}
+          >
             Change theme
-          </a>
+          </p>
         </div>
         <div className={classes["footer__grid--element"]}>
           <Link to="/about" className={classes["footer__grid--element-link"]}>
@@ -76,6 +86,7 @@ export const Footer = () => {
               aria-label="CodePen"
               href="https://codepen.io/mdmusaibali"
               target="_blank"
+              rel="noreferrer"
               className={classes["footer__reach-icon"]}
             >
               <svg
@@ -100,6 +111,7 @@ export const Footer = () => {
               aria-label="GitHub"
               href="https://github.com/mdmusaibali"
               target="_blank"
+              rel="noreferrer"
               className={classes["footer__reach-icon"]}
             >
               <svg
@@ -120,6 +132,7 @@ export const Footer = () => {
               aria-label="Linkedin"
               href="https://www.linkedin.com/in/mohammed-musaib-ali-b891601ba"
               target="_blank"
+              rel="noreferrer"
               className={classes["footer__reach-icon"]}
             >
               <svg
