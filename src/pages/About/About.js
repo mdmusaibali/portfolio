@@ -1,6 +1,5 @@
 import { Animoji } from "../../components/Animoji/Animoji";
 import { CenterDiv } from "../../components/CenterDiv/CenterDiv";
-import { EmailMe } from "../../components/Contact/EmailMe/EmailMe";
 import { MessageMe } from "../../components/Contact/MessageMe/MessageMe";
 import { Footer } from "../../components/Footer/Footer";
 import { FunText } from "../../components/FunText/FunText";
