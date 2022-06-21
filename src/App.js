@@ -26,6 +26,7 @@ function App() {
           document.getElementById("gradient-outer")
         )}
         <Navigation />
+
         <Routes>
           <Route path="/" element={<Navigate replace to="/home" />} />
           <Route path="/home" element={<Home />} />
