@@ -1,4 +1,4 @@
-import { CenterDiv } from "../../components/CenterDiv/CenterDiv";
+import CenterDiv from "../../components/CenterDiv/CenterDiv";
 import { MessageMe } from "../../components/Contact/MessageMe/MessageMe";
 import { Footer } from "../../components/Footer/Footer";
 import { MultiPurposeList } from "../../components/MultiPurposeList/MultiPurposeList";
@@ -11,6 +11,9 @@ export const Now = () => {
         extraStyles={{
           padding: "10rem 0 6rem 0",
           borderBottom: "1px solid var(--color-dark-gray)",
+          "@media(max-width:425px)": {
+            marginTop: "10rem",
+          },
         }}
       >
         <svg

@@ -10,6 +10,7 @@ import { Now } from "./pages/Now/Now";
 import { useDispatch } from "react-redux";
 import { themeActions } from "./store/theme-slice";
 import { Project } from "./pages/Project/Project";
+import Radium, { StyleRoot } from "radium";
 
 function App() {
   const dispatch = useDispatch();
@@ -18,22 +19,24 @@ function App() {
     dispatch(themeActions.changeTheme());
   }, [dispatch]);
   return (
-    <div className="App">
-      {createPortal(
-        <div className="gradient-inner"></div>,
-        document.getElementById("gradient-outer")
-      )}
-      <Navigation />
-      <Routes>
-        <Route path="/" element={<Navigate replace to="/home" />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/projects/" element={<Projects />}></Route>
-        <Route path="/projects/:projectId" element={<Project />}></Route>
-        <Route path="/about" element={<About />} />
-        <Route path="/now" element={<Now />} />
-      </Routes>
-    </div>
+    <StyleRoot>
+      <div className="App">
+        {createPortal(
+          <div className="gradient-inner"></div>,
+          document.getElementById("gradient-outer")
+        )}
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<Navigate replace to="/home" />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/projects/" element={<Projects />}></Route>
+          <Route path="/projects/:projectId" element={<Project />}></Route>
+          <Route path="/about" element={<About />} />
+          <Route path="/now" element={<Now />} />
+        </Routes>
+      </div>
+    </StyleRoot>
   );
 }
 
-export default App;
+export default Radium(App);

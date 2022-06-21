@@ -1,4 +1,8 @@
 .centerDiv {
   max-width: 782px;
   margin: 0 auto;
+
+  @media (max-width: 769px) {
+    width: 90%;
+  }
 }

@@ -1,5 +1,5 @@
 import { Animoji } from "../../components/Animoji/Animoji";
-import { CenterDiv } from "../../components/CenterDiv/CenterDiv";
+import CenterDiv from "../../components/CenterDiv/CenterDiv";
 import { MessageMe } from "../../components/Contact/MessageMe/MessageMe";
 import { Footer } from "../../components/Footer/Footer";
 import { FunText } from "../../components/FunText/FunText";
@@ -13,6 +13,9 @@ export const About = () => {
         extraStyles={{
           padding: "10rem 0 6rem 0",
           borderBottom: "1px solid var(--color-dark-gray)",
+          "@media(max-width:425px)": {
+            marginTop: "10rem",
+          },
         }}
       >
         <Animoji />
@@ -55,6 +58,8 @@ export const About = () => {
         <a
           href="https://drive.google.com/file/d/1BooHhUq3jkPn3aMYPRHIPeesAdyfXPx-/view?usp=sharing"
           className={classes["button--resume"]}
+          target="_blank"
+          rel="noreferrer"
         >
           Resume
         </a>

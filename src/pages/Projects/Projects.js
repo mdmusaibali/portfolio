@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { CenterDiv } from "../../components/CenterDiv/CenterDiv";
+import CenterDiv from "../../components/CenterDiv/CenterDiv";
 import { EmailMe } from "../../components/Contact/EmailMe/EmailMe";
 import { MessageMe } from "../../components/Contact/MessageMe/MessageMe";
 import { Footer } from "../../components/Footer/Footer";
@@ -18,6 +18,9 @@ export const Projects = () => {
         extraStyles={{
           padding: "10rem 0 6rem 0",
           borderBottom: "1px solid var(--color-dark-gray)",
+          "@media(max-width:425px)": {
+            marginTop: "10rem",
+          },
         }}
       >
         <svg
@@ -108,6 +111,10 @@ export const Projects = () => {
           gap: "2rem",
           padding: "20rem 0 15rem 0",
           borderBottom: "1px solid var(--color-dark-gray)",
+          "@media(max-width: 769px)": {
+            flexDirection: "column",
+            alignItems: "center",
+          },
         }}
       >
         <EmailMe />
@@ -116,7 +123,7 @@ export const Projects = () => {
 
       <CenterDiv
         extraStyles={{
-          padding: " 6rem 0",
+          padding: "6rem 0",
         }}
       >
         <Footer />

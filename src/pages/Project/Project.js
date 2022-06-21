@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
-import { CenterDiv } from "../../components/CenterDiv/CenterDiv";
+import CenterDiv from "../../components/CenterDiv/CenterDiv";
 import classes from "./Project.module.scss";
 
 export const Project = () => {
@@ -16,6 +16,12 @@ export const Project = () => {
     <CenterDiv
       extraStyles={{
         padding: "10rem 0",
+        "@media(max-width: 769px)": {
+          width: "90%",
+        },
+        "@media(max-width: 425px)": {
+          marginTop: "10rem",
+        },
       }}
     >
       <div
@@ -51,6 +57,9 @@ export const Project = () => {
           href={currentProject.live}
           style={{
             marginRight: "0.5rem",
+            "@media(max-width:425px)": {
+              marginRight: "1rem",
+            },
           }}
           target="_blank"
           rel="noreferrer"

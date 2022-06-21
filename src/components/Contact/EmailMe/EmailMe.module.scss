@@ -22,18 +22,19 @@
     width: 35%;
     border-collapse: collapse;
     border-radius: 2rem;
-    @media (max-width: 625px) {
+    @media (max-width: 769px) {
       width: 70%;
       margin: 0 auto;
     }
+    @media (max-width: 625px) {
+      width: 80%;
+      margin: 0 auto;
+    }
     @media (max-width: 425px) {
-      width: 85%;
+      width: 95%;
       margin: 0 auto;
     }
-    @media (max-width: 320px) {
-      width: 90%;
-      margin: 0 auto;
-    }
+
     &--top {
       position: relative;
       padding: 6rem 1.5rem 2.5rem 1.5rem;

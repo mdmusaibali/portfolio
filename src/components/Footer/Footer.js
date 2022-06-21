@@ -4,20 +4,39 @@ import { themeActions } from "../../store/theme-slice";
 import classes from "./Footer.module.scss";
 export const Footer = () => {
   const dispatch = useDispatch();
-  const toggleThemePicker = () => {
-    dispatch(themeActions.toggleThemePickerIsOpen());
+
+  const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
+  const toggleThemePicker = () => {
+    dispatch(themeActions.toggleThemePickerIsOpen());
+    scrollToTop();
+  };
+
+  const resetThemeHandler = () => {
+    dispatch(themeActions.changeThemeState({ themeName: "Light" }));
+    dispatch(themeActions.changeTheme());
+  };
+
   return (
     <>
       <div className={classes["footer__grid"]}>
         <div className={classes["footer__grid--element"]}>
-          <Link to="/home" className={classes["footer__grid--element-link"]}>
+          <Link
+            onClick={scrollToTop}
+            to="/home"
+            className={classes["footer__grid--element-link"]}
+          >
             Home
           </Link>
         </div>
         <div className={classes["footer__grid--element"]}>
-          <Link to="/home" className={classes["footer__grid--element-link"]}>
+          <Link
+            onClick={scrollToTop}
+            to="/home"
+            className={classes["footer__grid--element-link"]}
+          >
             Portfolio/Work
           </Link>
         </div>
@@ -30,12 +49,20 @@ export const Footer = () => {
           </p>
         </div>
         <div className={classes["footer__grid--element"]}>
-          <Link to="/about" className={classes["footer__grid--element-link"]}>
+          <Link
+            onClick={scrollToTop}
+            to="/about"
+            className={classes["footer__grid--element-link"]}
+          >
             About
           </Link>
         </div>
         <div className={classes["footer__grid--element"]}>
-          <Link to="/now" className={classes["footer__grid--element-link"]}>
+          <Link
+            onClick={scrollToTop}
+            to="/now"
+            className={classes["footer__grid--element-link"]}
+          >
             Now
           </Link>
         </div>
@@ -173,7 +200,9 @@ export const Footer = () => {
             </a>
           </div>
         </div>
-        <button className={classes["btn--reset"]}>Reset theme</button>
+        <button onClick={resetThemeHandler} className={classes["btn--reset"]}>
+          Reset theme
+        </button>
       </div>
     </>
   );
