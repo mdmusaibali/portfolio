@@ -2,8 +2,12 @@ import { Link } from "react-router-dom";
 import classes from "./AnchoredListItem.module.scss";
 export const AnchoredListItem = (props) => {
   const item = props.item;
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <Link
+      onClick={scrollToTop}
       to={`/projects/${item.id}`}
       className={`${classes["section__container--element-link"]} ${
         props.isLastItem ? classes["borderBottomNone"] : ""

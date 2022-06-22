@@ -96,50 +96,61 @@ export const Navigation = () => {
               )}
 
               {isMobile && (
-                <button
-                  onClick={toggleMobileNavbar}
-                  className={classes["navigation__button"]}
-                >
-                  <svg
-                    className={classes["navigation__theme--svg"]}
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"
+                <div style={{ display: "flex", gap: "1rem" }}>
+                  <button
+                    onClick={toggleMobileNavbar}
+                    className={classes["navigation__button"]}
                   >
-                    <line
-                      x1="88"
-                      y1="152"
-                      x2="424"
-                      y2="152"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeMiterlimit="10"
-                      strokeWidth="48px"
-                    ></line>
-                    <line
-                      x1="88"
-                      y1="256"
-                      x2="424"
-                      y2="256"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeMiterlimit="10"
-                      strokeWidth="48px"
-                    ></line>
-                    <line
-                      x1="88"
-                      y1="360"
-                      x2="424"
-                      y2="360"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeMiterlimit="10"
-                      strokeWidth="48px"
-                    ></line>
-                  </svg>
-                </button>
+                    <svg
+                      className={classes["navigation__theme--svg"]}
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <line
+                        x1="88"
+                        y1="152"
+                        x2="424"
+                        y2="152"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeMiterlimit="10"
+                        strokeWidth="48px"
+                      ></line>
+                      <line
+                        x1="88"
+                        y1="256"
+                        x2="424"
+                        y2="256"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeMiterlimit="10"
+                        strokeWidth="48px"
+                      ></line>
+                      <line
+                        x1="88"
+                        y1="360"
+                        x2="424"
+                        y2="360"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeMiterlimit="10"
+                        strokeWidth="48px"
+                      ></line>
+                    </svg>
+                  </button>
+                  <p
+                    className={
+                      classes["navigation__buttons-left-container-name"]
+                    }
+                  >
+                    <span className={classes["name"]}>Mohammed Musaib Ali</span>
+                    <br />
+                    <span className={classes["job"]}>Frontend Developer</span>
+                  </p>
+                </div>
               )}
 
               <button
