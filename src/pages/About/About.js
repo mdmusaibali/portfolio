@@ -6,7 +6,7 @@ import { FunText } from "../../components/FunText/FunText";
 import { MultiPurposeList } from "../../components/MultiPurposeList/MultiPurposeList";
 import { EDUCATION_DETAILS } from "../../store/data";
 import classes from "./About.module.scss";
-export const About = () => {
+const About = () => {
   return (
     <>
       <CenterDiv
@@ -137,3 +137,5 @@ export const About = () => {
     </>
   );
 };
+
+export default About;

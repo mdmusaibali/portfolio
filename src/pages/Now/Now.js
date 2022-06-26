@@ -4,7 +4,7 @@ import { Footer } from "../../components/Footer/Footer";
 import { MultiPurposeList } from "../../components/MultiPurposeList/MultiPurposeList";
 import { BOOK_RECOMMENDATIONS, BUILDING, GAMES } from "../../store/data";
 import classes from "./Now.module.scss";
-export const Now = () => {
+const Now = () => {
   return (
     <>
       <CenterDiv
@@ -111,3 +111,5 @@ export const Now = () => {
     </>
   );
 };
+
+export default Now;

@@ -1,6 +1,18 @@
 .theme-picker {
   padding: 1.5rem 2rem;
 
+  &-close {
+    overflow: hidden;
+    transition: all 0.5s;
+    padding: 0;
+    height: 0px;
+  }
+  &-open {
+    overflow: hidden;
+    transition: all 0.5s;
+    padding: 1.5rem 2rem;
+    height: 15rem;
+  }
   &--text {
     text-align: center;
     font-size: 1.2rem;
@@ -23,5 +35,45 @@
       width: 15rem;
       background-color: red;
     }
+  }
+}
+
+// .theme-picker-close {
+//   overflow: hidden;
+//   animation: closeThemePicker 3s ease 0s 1 forwards;
+// }
+
+// .theme-picker-open {
+//   overflow: hidden;
+//   animation: openThemePicker 3s ease 0s 1 forwards;
+// }
+
+@keyframes closeThemePicker {
+  0% {
+    padding: 1.5rem 2rem;
+    height: auto;
+  }
+  50% {
+    padding: 0.75rem 2rem;
+    height: auto;
+  }
+  100% {
+    padding: 0;
+    height: 0px;
+  }
+}
+
+@keyframes openThemePicker {
+  0% {
+    padding: 0;
+    height: 0px;
+  }
+  50% {
+    padding: 0.75rem 2rem;
+    height: auto;
+  }
+  100% {
+    padding: 1.5rem 2rem;
+    height: auto;
   }
 }

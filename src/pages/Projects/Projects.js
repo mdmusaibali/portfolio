@@ -6,7 +6,7 @@ import { Footer } from "../../components/Footer/Footer";
 import { MultiPurposeList } from "../../components/MultiPurposeList/MultiPurposeList";
 import classes from "./Projects.module.scss";
 
-export const Projects = () => {
+const Projects = () => {
   const ownProjects = useSelector((store) => store.projects.ownProjects);
   const practiceProjects = useSelector(
     (store) => store.projects.practiceProjects
@@ -131,3 +131,4 @@ export const Projects = () => {
     </>
   );
 };
+export default Projects;

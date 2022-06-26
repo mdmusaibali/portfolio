@@ -38,7 +38,8 @@ export const Navigation = () => {
   return (
     <>
       <header className={classes.header}>
-        {themePickerIsOpen ? <ThemePicker /> : ""}
+        {/* {themePickerIsOpen ? <ThemePicker /> : ""} */}
+        <ThemePicker themePickerIsOpen={themePickerIsOpen} />
         <CenterDiv>
           <nav className={classes.nav}>
             <FlexSB>
@@ -174,50 +175,50 @@ export const Navigation = () => {
         </CenterDiv>
         {isMobileNavbarOpen && (
           <ul className={classes["navigation__items--mobile"]}>
-            <li className={classes["navigation__item--mobile"]}>
-              <NavLink
-                to="/home"
-                onClick={closeMobileNavBar}
-                className={(navData) => {
-                  return navData.isActive ? classes["selected"] : classes[""];
-                }}
-              >
-                Home
-              </NavLink>
-            </li>
-            <li className={classes["navigation__item--mobile"]}>
-              <NavLink
-                to="/projects"
-                onClick={closeMobileNavBar}
-                className={(navData) => {
-                  return navData.isActive ? classes["selected"] : classes[""];
-                }}
-              >
-                Projects
-              </NavLink>
-            </li>
-            <li className={classes["navigation__item--mobile"]}>
-              <NavLink
-                to="/about"
-                onClick={closeMobileNavBar}
-                className={(navData) => {
-                  return navData.isActive ? classes["selected"] : classes[""];
-                }}
-              >
-                About
-              </NavLink>
-            </li>
-            <li className={classes["navigation__item--mobile"]}>
-              <NavLink
-                to="/now"
-                onClick={closeMobileNavBar}
-                className={(navData) => {
-                  return navData.isActive ? classes["selected"] : classes[""];
-                }}
-              >
-                Now
-              </NavLink>
-            </li>
+            <NavLink
+              to="/home"
+              onClick={closeMobileNavBar}
+              className={(navData) => {
+                return navData.isActive
+                  ? classes["selected"]
+                  : classes["not-selected"];
+              }}
+            >
+              <li className={classes["navigation__item--mobile"]}>Home</li>
+            </NavLink>
+            <NavLink
+              to="/projects"
+              onClick={closeMobileNavBar}
+              className={(navData) => {
+                return navData.isActive
+                  ? classes["selected"]
+                  : classes["not-selected"];
+              }}
+            >
+              <li className={classes["navigation__item--mobile"]}>Projects</li>
+            </NavLink>
+            <NavLink
+              to="/about"
+              onClick={closeMobileNavBar}
+              className={(navData) => {
+                return navData.isActive
+                  ? classes["selected"]
+                  : classes["not-selected"];
+              }}
+            >
+              <li className={classes["navigation__item--mobile"]}>About</li>
+            </NavLink>
+            <NavLink
+              to="/now"
+              onClick={closeMobileNavBar}
+              className={(navData) => {
+                return navData.isActive
+                  ? classes["selected"]
+                  : classes["not-selected"];
+              }}
+            >
+              <li className={classes["navigation__item--mobile"]}>Now</li>
+            </NavLink>
           </ul>
         )}
       </header>

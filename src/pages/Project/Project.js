@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import CenterDiv from "../../components/CenterDiv/CenterDiv";
 import classes from "./Project.module.scss";
 
-export const Project = () => {
+const Project = () => {
   const params = useParams();
   const projectId = params.projectId;
 
@@ -114,3 +114,5 @@ export const Project = () => {
     </CenterDiv>
   );
 };
+
+export default Project;

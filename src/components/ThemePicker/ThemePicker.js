@@ -17,8 +17,15 @@ export const ThemePicker = (props) => {
     dispatch(themeActions.setThemeToLocalStorage());
   };
 
+  const cssThemeClasses = [
+    "theme-picker",
+    props.themePickerIsOpen
+      ? classes["theme-picker-open"]
+      : classes["theme-picker-close"],
+  ];
+
   return (
-    <div className={classes["theme-picker"]}>
+    <div className={cssThemeClasses.join(" ")}>
       <p className={classes["theme-picker--text"]}>
         Select your favourite theme
       </p>

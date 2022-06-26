@@ -41,6 +41,7 @@
   padding: 2rem 0rem;
   max-width: 782px;
   margin: 0 auto;
+  z-index: 999;
 
   &-list {
     list-style: none;
@@ -176,10 +177,18 @@
   text-decoration: none;
   color: var(--color-text-primary);
 }
-
+.not-selected {
+  text-decoration: none;
+}
 .selected {
+  text-decoration: none;
+}
+
+.selected > .navigation__item--mobile {
   color: var(--color-primary) !important;
   font-weight: 800 !important;
+  border-radius: 0.4rem;
+  background-color: var(--color-nav-hover);
 }
 
 .navigation__item--mobile:not(:last-child) {
@@ -205,3 +214,5 @@
   font-weight: 500;
   font-size: 1.3rem;
 }
+
+//Animations

@@ -9,7 +9,7 @@ import { MultiPurposeList } from "../../components/MultiPurposeList/MultiPurpose
 import { SKILLS } from "../../store/data";
 import classes from "./Home.module.scss";
 
-export const Home = () => {
+const Home = () => {
   const top3Projects = useSelector((store) => store.projects.ownProjects).slice(
     0,
     3
@@ -159,3 +159,5 @@ export const Home = () => {
     </>
   );
 };
+
+export default Home;
