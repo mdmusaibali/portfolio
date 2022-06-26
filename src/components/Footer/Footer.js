@@ -18,6 +18,7 @@ export const Footer = () => {
   const resetThemeHandler = () => {
     dispatch(themeActions.changeThemeState({ themeName: "Light" }));
     dispatch(themeActions.changeTheme());
+    dispatch(themeActions.setThemeToLocalStorage());
   };
 
   return (
