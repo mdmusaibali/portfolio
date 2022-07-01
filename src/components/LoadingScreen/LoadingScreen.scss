@@ -45,18 +45,20 @@ $colors: (
 );
 
 #loading-screen-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // width: 100%;
+  // min-height: 100vh;
+  // flex-direction: column;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
   margin: 0;
   background: var(--color-background);
+  background-color: transparent;
   z-index: 9999;
+  min-height: 80vh;
 }
 
 .mosaic-loader {
