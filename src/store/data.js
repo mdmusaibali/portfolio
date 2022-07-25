@@ -119,6 +119,22 @@ export const OWN_PROJECTS = [
 export const PRACTICE_PROJECTS = [
   {
     no: 0,
+    id: "Project Tracker",
+    name: "Project Tracker",
+    shortDescription: "Small TypeScript practice project.",
+    longDescription:
+      "My very first TypeScript web app. Just some fun drag and drop stuff. Nothing interesting to be honest",
+    date: "July 2022",
+    live: "https://mdmusaibali.github.io/Drag-And-Drop-TS/",
+    sourceCode: "https://github.com/mdmusaibali/Drag-And-Drop-TS",
+    icon: "/assets/img/projectIcons/projectTracker.png",
+    desktopImages: ["/assets/img/projectImages/ProjectTracker.jpg"],
+    mobileImages: [],
+    logoBackground: "lightpink",
+    logoAlt: "Project Tracker Logo",
+  },
+  {
+    no: 1,
     id: "expensetracker",
     name: "Expense tracker",
     shortDescription: "UI for a vacation booking website.",
@@ -137,7 +153,7 @@ export const PRACTICE_PROJECTS = [
     logoAlt: "Expense Tracker Logo",
   },
   {
-    no: 1,
+    no: 2,
     id: "natours",
     name: "Natours",
     shortDescription: "Landing page for tours company.",
@@ -163,7 +179,7 @@ export const PRACTICE_PROJECTS = [
     logoAlt: "Natours Logo",
   },
   {
-    no: 2,
+    no: 3,
     id: "bankist",
     name: "Bankist",
     shortDescription: "Landing page for banking system.",
@@ -188,7 +204,7 @@ export const PRACTICE_PROJECTS = [
     logoAlt: "Bankist Logo",
   },
   {
-    no: 3,
+    no: 4,
     id: "omnifood",
     name: "Omnifood",
     shortDescription: "Landing page for food company.",
@@ -214,7 +230,7 @@ export const PRACTICE_PROJECTS = [
     logoAlt: "Omnifood Logo",
   },
   {
-    no: 4,
+    no: 5,
     id: "nexter",
     name: "Nexter",
     shortDescription: "UI for real estate site.",
@@ -241,7 +257,7 @@ export const PRACTICE_PROJECTS = [
     logoAlt: "Nexter Logo",
   },
   {
-    no: 5,
+    no: 6,
     id: "trillo",
     name: "Trillo",
     shortDescription: "UI for hotel booking site.",
@@ -257,7 +273,7 @@ export const PRACTICE_PROJECTS = [
     logoAlt: "Trillo Logo",
   },
   {
-    no: 6,
+    no: 7,
     id: "smalljavascriptprojects",
     name: "Small JavaScript projects",
     shortDescription: "Few of my javascript mini apps.",
