@@ -2,6 +2,26 @@
 export const OWN_PROJECTS = [
   {
     no: 0,
+    id: "weather-app",
+    name: "Weather App",
+    shortDescription: "Live weather for any place.",
+    longDescription:
+      "A web application that can give live weather forcast for any place around the globe. Made with React and TypeScript",
+    date: "July 2022",
+    live: "https://weather-app-musaib.netlify.app/",
+    sourceCode: "https://github.com/mdmusaibali/weather-app-react-ts",
+    icon: "/assets/img/projectIcons/weather-app.png",
+    desktopImages: ["/assets/img/projectImages/weather-app-D1.jpg"],
+    mobileImages: [
+      "/assets/img/projectImages/weather-app-M1.jpg",
+      "/assets/img/projectImages/weather-app-M2.jpg",
+      "/assets/img/projectImages/weather-app-M3.jpg",
+    ],
+    logoBackground: "lightgreen",
+    logoAlt: "Weather App Logo",
+  },
+  {
+    no: 1,
     id: "cryptinfo",
     name: "CryptInfo",
     shortDescription: "Live statistics of cryptocurrencies.",
@@ -23,7 +43,7 @@ export const OWN_PROJECTS = [
     logoAlt: "CryptInfo Logo",
   },
   {
-    no: 1,
+    no: 2,
     id: "chefshat",
     name: "Chef's Hat",
     shortDescription: "A recipe handbook.",
@@ -46,7 +66,7 @@ export const OWN_PROJECTS = [
     logoAlt: "Chef's Hat Logo",
   },
   {
-    no: 2,
+    no: 3,
     id: "maptodo",
     name: "Maptodo",
     shortDescription: "A map with a task on location.",
@@ -65,7 +85,7 @@ export const OWN_PROJECTS = [
     logoAlt: "Maptodo Logo",
   },
   {
-    no: 3,
+    no: 4,
     id: "hoodie",
     name: "Hoddie",
     shortDescription: "UI for a hoodie selling website.",
@@ -90,7 +110,7 @@ export const OWN_PROJECTS = [
     logoAlt: "Hoodie Logo",
   },
   {
-    no: 4,
+    no: 5,
     id: "travella",
     name: "Travella",
     shortDescription: "UI for a vacation booking website.",
