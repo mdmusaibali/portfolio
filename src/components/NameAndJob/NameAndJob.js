@@ -23,7 +23,7 @@ const NameAndJob = () => {
       </div>
       <div className={classes["footer__name-box"]}>
         <p className={classes["footer__name-box-name"]}>Mohammed Musaib Ali</p>
-        <p className={classes["footer__name-box-job"]}>Frontend Developer</p>
+        <p className={classes["footer__name-box-job"]}>Full Stack Developer</p>
       </div>
     </div>
   );

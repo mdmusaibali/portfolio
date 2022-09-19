@@ -25,15 +25,15 @@ const About = () => {
         <FunText />
 
         <p className={classes["section__about-text"]}>
-          I'm VIth semester student at P.D.A College of Engineering. I LOVE
-          programming and developing new STUFF. Last year has been awesome for
-          me. I got to learn many programming languages and made many stunning
+          I'm final year student at P.D.A College of Engineering. I LOVE
+          programming and developing new STUFF. Last few years have been awesome
+          for me. I got to learn many new technologies and made many stunning
           websites. I try to keep up with design and technology trends.
           <br />
           <br />
-          I've completed learning HTML, CSS, MySQL and JavaScript last year and
-          React.js this year. I'm currently learning Typescript. There's always
-          a new thing to learn. It's like a never ending cycle😉.
+          I have hands on experience working with HTML, CSS, SASS, MySQL,
+          JavaScript,TypeScript, MongoDB, Mongoose, Node.js, Git, Material UI
+          and React.js. I'm currently learning React Native.
           <br />
           <br />I get a lot of interesting ideas in my mind and i've always
           preferred to implement them rather than just keeping them in the
