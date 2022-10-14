@@ -149,7 +149,7 @@ export const Navigation = () => {
                   >
                     <span className={classes["name"]}>Mohammed Musaib Ali</span>
                     <br />
-                    <span className={classes["job"]}>Frontend Developer</span>
+                    <span className={classes["job"]}>Full Stack Developer</span>
                   </p>
                 </div>
               )}

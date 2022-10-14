@@ -56,7 +56,7 @@ const About = () => {
         />
 
         <a
-          href="https://drive.google.com/file/d/1BooHhUq3jkPn3aMYPRHIPeesAdyfXPx-/view?usp=sharing"
+          href="https://drive.google.com/file/d/1x-FDsUAWsngZC_MUI2AWypXoAQGuCaP0/view?usp=sharing"
           className={classes["button--resume"]}
           target="_blank"
           rel="noreferrer"

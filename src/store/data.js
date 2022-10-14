@@ -8,7 +8,7 @@ export const OWN_PROJECTS = [
     longDescription:
       "A minimalistic news app with news from around 49 different countries in 14 different languages",
     date: "July 2022",
-    live: "https://images.unsplash.com/photo-1614332287897-cdc485fa562d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    live: "https://play.google.com/store/apps/details?id=com.simplinewz.newsapp",
     sourceCode: "https://github.com/mdmusaibali/simpliNewz",
     icon: "/assets/img/projectIcons/news.png",
     desktopImages: [],
@@ -527,6 +527,16 @@ export const SKILLS = [
   },
   {
     no: 8,
+    id: "mui",
+    name: "Material UI",
+    shortDescription: "Advanced",
+    date: "September 2022",
+    icon: "/assets/img/languageIcons/mui.png",
+    logoAlt: "Shows material UI logo",
+    logoBackground: "skills",
+  },
+  {
+    no: 9,
     id: "git",
     name: "Git",
     shortDescription: "Intermediate",
@@ -536,23 +546,37 @@ export const SKILLS = [
     logoBackground: "skills",
   },
   {
-    no: 9,
+    no: 10,
     id: "typescript",
     name: "TypeScript",
-    shortDescription: "Intermediate",
+    shortDescription: "Basics",
     date: "June 2022",
     icon: "/assets/img/languageIcons/typescript.png",
     logoAlt: "Shows typescript logo",
     logoBackground: "skills",
   },
+
+  // {
+  //   no: 10,
+  //   id: "mysql",
+  //   name: "MySQL",
+  //   shortDescription: "Intermediate",
+  //   date: "June 2021",
+  //   icon: "/assets/img/languageIcons/sql.png",
+  //   logoAlt: "Shows mysql logo",
+  //   logoBackground: "skills",
+  // },
+];
+
+export const EXPERIENCE = [
   {
-    no: 10,
-    id: "mysql",
-    name: "MySQL",
-    shortDescription: "Intermediate",
-    date: "June 2021",
-    icon: "/assets/img/languageIcons/sql.png",
-    logoAlt: "Shows mysql logo",
+    no: 0,
+    id: "quantum",
+    name: "React.js Intern",
+    shortDescription: "Quantum Dynamics Corp",
+    date: "September 2022 - Present",
+    icon: "/assets/img/companyIcons/quantumDynamicsCorp.jpg",
+    logoAlt: "Shows reactjs logo",
     logoBackground: "skills",
   },
 ];
@@ -602,6 +626,16 @@ export const GAMES = [
 export const BUILDING = [
   {
     no: 0,
+    id: "hospaid",
+    name: "hospAid",
+    shortDescription: "A mobile application to book blood diagnostic tests.",
+    date: "October 2022",
+    icon: "/assets/img/projectIcons/hospaid.png",
+    logoAlt: "Shows hospAid logo",
+    logoBackground: "teal",
+  },
+  {
+    no: 1,
     id: "portfolio",
     name: "Portfolio",
     shortDescription: "Constantly cleaning and improving my portfolio.",

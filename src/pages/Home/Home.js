@@ -6,7 +6,7 @@ import { MessageMe } from "../../components/Contact/MessageMe/MessageMe";
 import { Footer } from "../../components/Footer/Footer";
 import { FunText } from "../../components/FunText/FunText";
 import { MultiPurposeList } from "../../components/MultiPurposeList/MultiPurposeList";
-import { SKILLS } from "../../store/data";
+import { EXPERIENCE, SKILLS } from "../../store/data";
 import classes from "./Home.module.scss";
 
 const Home = () => {
@@ -126,7 +126,7 @@ const Home = () => {
         >
           Experience
         </h2>
-        <p className={classes["experience--text"]}>I'd love to have some 😄.</p>
+        <MultiPurposeList items={EXPERIENCE} anchored={false} />
       </CenterDiv>
 
       <CenterDiv
