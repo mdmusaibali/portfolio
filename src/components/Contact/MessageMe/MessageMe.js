@@ -24,9 +24,7 @@ export const MessageMe = (props) => {
         Like seriously, anything.
       </p>
       <form
-//         action="https://formsubmit.co/mdmusaibali@gmail.com"
-        id="contactdetails"
-        name="contactMe"
+        name="contact-me"
         method="POST"
         data-netlify="true"
       >
