@@ -24,9 +24,10 @@ export const MessageMe = (props) => {
         Like seriously, anything.
       </p>
       <form
-        action="https://formsubmit.co/mdmusaibali@gmail.com"
+//         action="https://formsubmit.co/mdmusaibali@gmail.com"
         id="contactdetails"
-        method="POST"
+//         method="POST"
+        netlify
       >
         <input
           type="text"
