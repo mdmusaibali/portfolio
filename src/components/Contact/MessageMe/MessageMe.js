@@ -23,31 +23,27 @@ export const MessageMe = (props) => {
       <p className={classes["contact__right--text"]}>
         Like seriously, anything.
       </p>
-      <form
-        name="contact-me"
-        method="POST"
-        data-netlify="true"
-      >
+      <form name="contact" method="POST" netlify>
         <input
           type="text"
           className={classes["contact__right--input"]}
           name="userName"
           placeholder="Your Name"
-          required=""
+          required
         />
         <input
           type="email"
           className={classes["contact__right--input"]}
           name="userEmail"
           placeholder="Your email"
-          required=""
+          required
         />
         <input
           type="text"
           className={classes["contact__right--input"]}
           name="userMessage"
           placeholder="Your message for me"
-          required=""
+          required
         />
         <button className={classes["contact__right--button"]}>Submit</button>
       </form>
