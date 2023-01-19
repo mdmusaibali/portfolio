@@ -70,7 +70,7 @@ const Project = () => {
         </a>
         <a href={currentProject.sourceCode} target="_blank" rel="noreferrer">
           <button className={classes["section--project-buttons-button"]}>
-            Source code
+            {currentProject.sourceCode ? "Source code" : "Private"}
           </button>
         </a>
       </div>
