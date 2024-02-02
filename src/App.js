@@ -1,5 +1,5 @@
 import "./App.scss";
-import React, { lazy, Suspense, useEffect, useState } from "react";
+import React, { lazy, Suspense, useCallback, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { Navigation } from "./components/Navigation/Navigation";
 import { Route, Routes, Navigate } from "react-router-dom";
@@ -9,6 +9,11 @@ import Radium, { StyleRoot } from "radium";
 import LoadingScreen from "./components/LoadingScreen/LoadingScreen";
 import { getProjects } from "./store/thunk/project-thunk";
 import CenterDiv from "./components/CenterDiv/CenterDiv";
+import {
+  getEducation,
+  getExperience,
+  getSkills,
+} from "./store/thunk/personal-thunk";
 
 const Projects = lazy(() => import("./pages/Projects/Projects"));
 const Home = lazy(() => import("./pages/Home/Home"));
@@ -20,16 +25,22 @@ function App() {
   const dispatch = useDispatch();
   const [isLoading, setIsLoading] = useState(true);
   const fetchProjectsErr = useSelector((state) => state.projects.error);
-  const fetchError = fetchProjectsErr;
+  const fetchPersonalErr = useSelector((state) => state.personal.error);
+  const fetchError = fetchProjectsErr ?? fetchPersonalErr;
+
+  const fetchData = useCallback(async () => {
+    await dispatch(getProjects());
+    await dispatch(getSkills());
+    await dispatch(getExperience());
+    await dispatch(getEducation());
+    setIsLoading(false);
+  }, [dispatch]);
 
   useEffect(() => {
     dispatch(themeActions.getThemeFromLocalStorage());
     dispatch(themeActions.changeTheme());
-    dispatch(getProjects()).finally(() => {
-      console.log("FINALLY ");
-      setIsLoading(false);
-    });
-  }, [dispatch]);
+    fetchData();
+  }, [dispatch, fetchData]);
 
   return (
     <StyleRoot>

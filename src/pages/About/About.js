@@ -1,12 +1,15 @@
+import { useSelector } from "react-redux";
 import { Animoji } from "../../components/Animoji/Animoji";
 import CenterDiv from "../../components/CenterDiv/CenterDiv";
 import { MessageMe } from "../../components/Contact/MessageMe/MessageMe";
 import { Footer } from "../../components/Footer/Footer";
 import { FunText } from "../../components/FunText/FunText";
 import { MultiPurposeList } from "../../components/MultiPurposeList/MultiPurposeList";
-import { EDUCATION_DETAILS } from "../../store/data";
 import classes from "./About.module.scss";
+
 const About = () => {
+  const educationDetails = useSelector((state) => state.personal.education);
+
   return (
     <>
       <CenterDiv
@@ -52,7 +55,7 @@ const About = () => {
 
         <MultiPurposeList
           extraStyles={{ marginBottom: "3rem" }}
-          items={EDUCATION_DETAILS}
+          items={educationDetails}
         />
 
         <a

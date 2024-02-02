@@ -6,7 +6,6 @@ import { MessageMe } from "../../components/Contact/MessageMe/MessageMe";
 import { Footer } from "../../components/Footer/Footer";
 import { FunText } from "../../components/FunText/FunText";
 import { MultiPurposeList } from "../../components/MultiPurposeList/MultiPurposeList";
-import { EXPERIENCE, SKILLS } from "../../store/data";
 import classes from "./Home.module.scss";
 
 const Home = () => {
@@ -14,6 +13,8 @@ const Home = () => {
     0,
     3
   );
+  const skills = useSelector((state) => state.personal.skills);
+  const experience = useSelector((state) => state.personal.experience);
 
   return (
     <>
@@ -111,7 +112,7 @@ const Home = () => {
       >
         <h2 className={classes["heading__secondary"]}>My Skills</h2>
 
-        <MultiPurposeList items={SKILLS} anchored={false} />
+        <MultiPurposeList items={skills} anchored={false} />
       </CenterDiv>
 
       <CenterDiv
@@ -126,7 +127,7 @@ const Home = () => {
         >
           Experience
         </h2>
-        <MultiPurposeList items={EXPERIENCE} anchored={false} />
+        <MultiPurposeList items={experience} anchored={false} />
       </CenterDiv>
 
       <CenterDiv

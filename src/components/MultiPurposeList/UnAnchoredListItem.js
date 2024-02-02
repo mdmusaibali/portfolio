@@ -17,9 +17,16 @@ export const UnAnchoredListItem = (props) => {
           <p className={classes["section__container--element--text"]}>
             {item.shortDescription}
           </p>
-          <p className={classes["section__container--element--text--date"]}>
-            {item.date}
-          </p>
+          {item.date && (
+            <p className={classes["section__container--element--text--date"]}>
+              {item.date}
+            </p>
+          )}
+          {item.startDate && (
+            <p className={classes["section__container--element--text--date"]}>
+              {item.startDate} - {item.endDate ? item.endDate : "Present"}
+            </p>
+          )}
         </div>
         <div
           className={`${classes["section__container--element--right"]} ${
