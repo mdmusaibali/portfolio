@@ -7,20 +7,20 @@ export const MultiPurposeList = (props) => {
     <div style={props.extraStyles}>
       {props.anchored &&
         items &&
-        items.map((item) => (
+        items.map((item, i) => (
           <AnchoredListItem
             key={item.id}
             item={item}
-            isLastItem={items.length - 1 === item.no}
+            isLastItem={items.length - 1 === i}
           />
         ))}
       {!props.anchored &&
         items &&
-        items.map((item) => (
+        items.map((item, i) => (
           <UnAnchoredListItem
             key={item.id}
             item={item}
-            isLastItem={items.length - 1 === item.no}
+            isLastItem={items.length - 1 === i}
           />
         ))}
     </div>

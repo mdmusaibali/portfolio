@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { themeActions } from "../../store/theme-slice";
+import { themeActions } from "../../store/slice/theme-slice";
 import NameAndJob from "../NameAndJob/NameAndJob";
 import classes from "./Footer.module.scss";
 export const Footer = () => {

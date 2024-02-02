@@ -1,10 +1,16 @@
+import { useSelector } from "react-redux";
 import CenterDiv from "../../components/CenterDiv/CenterDiv";
 import { MessageMe } from "../../components/Contact/MessageMe/MessageMe";
 import { Footer } from "../../components/Footer/Footer";
 import { MultiPurposeList } from "../../components/MultiPurposeList/MultiPurposeList";
-import { BOOK_RECOMMENDATIONS, BUILDING, GAMES } from "../../store/data";
+import { BOOK_RECOMMENDATIONS, GAMES } from "../../store/data";
 import classes from "./Now.module.scss";
+
 const Now = () => {
+  const projectsBeingBuilt = useSelector((store) => store.projects.building);
+  const hasProjectsBeingBuilt =
+    Array.isArray(projectsBeingBuilt) && projectsBeingBuilt.length > 0;
+
   return (
     <>
       <CenterDiv
@@ -60,15 +66,17 @@ const Now = () => {
         </p>
       </CenterDiv>
 
-      <CenterDiv
-        extraStyles={{
-          padding: "5rem 0 5rem 0",
-          borderBottom: "1px solid var(--color-dark-gray)",
-        }}
-      >
-        <h2 className={classes["heading__secondary"]}>Building 💻</h2>
-        <MultiPurposeList items={BUILDING} anchored={false} />
-      </CenterDiv>
+      {hasProjectsBeingBuilt && (
+        <CenterDiv
+          extraStyles={{
+            padding: "5rem 0 5rem 0",
+            borderBottom: "1px solid var(--color-dark-gray)",
+          }}
+        >
+          <h2 className={classes["heading__secondary"]}>Building 💻</h2>
+          <MultiPurposeList items={projectsBeingBuilt} anchored={false} />
+        </CenterDiv>
+      )}
 
       <CenterDiv
         extraStyles={{

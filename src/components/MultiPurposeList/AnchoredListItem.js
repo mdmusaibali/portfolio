@@ -34,7 +34,7 @@ export const AnchoredListItem = (props) => {
         >
           <img
             className={classes["section__logo"]}
-            src={item.icon}
+            src={item.iconURL}
             alt={`${item.logoAlt}`}
           />
         </div>

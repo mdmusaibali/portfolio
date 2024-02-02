@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
-import { themeActions } from "../../store/theme-slice";
+import { themeActions } from "../../store/slice/theme-slice";
 import { ThemeItem } from "./ThemeItem";
 import classes from "./ThemePicker.module.scss";
 

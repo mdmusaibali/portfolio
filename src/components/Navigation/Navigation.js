@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
-import { themeActions } from "../../store/theme-slice";
+import { themeActions } from "../../store/slice/theme-slice";
 import CenterDiv from "../CenterDiv/CenterDiv";
 import { FlexSB } from "../Flex/FlexSB";
 import { ThemePicker } from "../ThemePicker/ThemePicker";

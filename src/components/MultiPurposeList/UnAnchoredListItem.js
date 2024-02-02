@@ -26,10 +26,10 @@ export const UnAnchoredListItem = (props) => {
             classes[`bg-${item.logoBackground}`]
           }`}
         >
-          {item.icon && (
+          {item.iconURL && (
             <img
               className={classes["section__logo"]}
-              src={item.icon}
+              src={item.iconURL}
               alt={`${item.logoAlt}`}
             />
           )}
