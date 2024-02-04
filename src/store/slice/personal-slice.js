@@ -30,7 +30,6 @@ const personalSlice = createSlice({
       if (Array.isArray(experience)) {
         state.experience = experience;
       }
-      console.log("experience ", experience);
     });
     builder.addCase(getExperience.rejected, (state) => {
       state.error = "Unable to fetch experience details from database 😔";
@@ -40,7 +39,6 @@ const personalSlice = createSlice({
       if (Array.isArray(education)) {
         state.education = education;
       }
-      console.log("education ", education);
     });
     builder.addCase(getEducation.rejected, (state) => {
       state.error = "Unable to fetch education details from database 😔";

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import classes from "./AnchoredListItem.module.scss";
+import { convertDateToMonthYear } from "../../utlis/date-helper";
 export const AnchoredListItem = (props) => {
   const item = props.item;
   const scrollToTop = () => {
@@ -24,7 +25,7 @@ export const AnchoredListItem = (props) => {
             {item.shortDescription}
           </p>
           <p className={classes["section__container--element--text--date"]}>
-            {item.date}
+            {convertDateToMonthYear(item.date)}
           </p>
         </div>
         <div

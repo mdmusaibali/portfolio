@@ -9,11 +9,11 @@ import { MultiPurposeList } from "../../components/MultiPurposeList/MultiPurpose
 import classes from "./Home.module.scss";
 
 const Home = () => {
-  const top3Projects = useSelector((store) => store.projects.ownProjects).slice(
+  const top5Projects = useSelector((store) => store.projects.ownProjects).slice(
     0,
-    3
+    5
   );
-  const skills = useSelector((state) => state.personal.skills);
+  const top5Skills = useSelector((state) => state.personal.skills).slice(0, 5);
   const experience = useSelector((state) => state.personal.experience);
 
   return (
@@ -79,7 +79,7 @@ const Home = () => {
         <h2 className={classes["heading__secondary"]}>My Projects💻</h2>
 
         <MultiPurposeList
-          items={top3Projects}
+          items={top5Projects}
           extraStyles={{ marginBottom: "3rem" }}
           anchored={true}
         />
@@ -112,7 +112,30 @@ const Home = () => {
       >
         <h2 className={classes["heading__secondary"]}>My Skills</h2>
 
-        <MultiPurposeList items={skills} anchored={false} />
+        <MultiPurposeList
+          items={top5Skills}
+          anchored={false}
+          extraStyles={{ marginBottom: "3rem" }}
+        />
+
+        <Link to="/skills" className={classes["btn__header"]}>
+          View more skills
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className={classes["icon"]}
+          >
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </Link>
       </CenterDiv>
 
       <CenterDiv

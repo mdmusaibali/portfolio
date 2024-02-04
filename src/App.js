@@ -14,6 +14,7 @@ import {
   getExperience,
   getSkills,
 } from "./store/thunk/personal-thunk";
+import Skills from "./pages/Skills/Skills";
 
 const Projects = lazy(() => import("./pages/Projects/Projects"));
 const Home = lazy(() => import("./pages/Home/Home"));
@@ -71,6 +72,7 @@ function App() {
               <Route path="/projects/:projectId" element={<Project />}></Route>
               <Route path="/about" element={<About />} />
               <Route path="/now" element={<Now />} />
+              <Route path="/skills" element={<Skills />} />
             </Routes>
           </Suspense>
         )}

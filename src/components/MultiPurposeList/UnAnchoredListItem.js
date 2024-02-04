@@ -1,3 +1,4 @@
+import { convertDateToMonthYear } from "../../utlis/date-helper";
 import classes from "./UnAnchoredListItem.module.scss";
 export const UnAnchoredListItem = (props) => {
   const item = props.item;
@@ -19,12 +20,23 @@ export const UnAnchoredListItem = (props) => {
           </p>
           {item.date && (
             <p className={classes["section__container--element--text--date"]}>
-              {item.date}
+              {convertDateToMonthYear(item.date)}
             </p>
           )}
           {item.startDate && (
             <p className={classes["section__container--element--text--date"]}>
-              {item.startDate} - {item.endDate ? item.endDate : "Present"}
+              {convertDateToMonthYear(item.startDate)} -{" "}
+              {item.endDate ? convertDateToMonthYear(item.endDate) : "Present"}
+            </p>
+          )}
+          {item.gameId && (
+            <p className={classes["section__container--element--text--date"]}>
+              {item.gameId}
+            </p>
+          )}
+          {item.rank && (
+            <p className={classes["section__container--element--text--date"]}>
+              {item.rank}
             </p>
           )}
         </div>

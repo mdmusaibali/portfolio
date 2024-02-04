@@ -28,20 +28,20 @@ const About = () => {
         <FunText />
 
         <p className={classes["section__about-text"]}>
-          I'm a final year student at P.D.A College of Engineering. I LOVE
-          programming and developing new STUFF. Last few years have been awesome
-          for me. I got to learn many new technologies and made many stunning
-          websites. I try to keep up with design and technology trends.
+          Experienced Fullstack Developer with a strong background in Vue,
+          React, React Native, NodeJS, NestJS and many other technologies.
           <br />
           <br />
-          Hands on experience working with HTML, CSS, SASS, MySQL,
-          JavaScript,TypeScript, MongoDB, Mongoose, Node.js, Git,Apollo GraphQL,
-          Material UI,Vite.js, React.js, React Native, Vue, Vuetify and
-          familiarity with python. Currently learning docker and kubernetes.
+          Skilled in migrating Vue2 to Vue3, building scalable UI components,
+          and integrating REST and GraphQL APIs. Bachelor's degree in Computer
+          Science with a passion for creating efficient and user-friendly
+          applications.
           <br />
-          <br />I get a lot of interesting ideas in my mind and i've always
-          preferred to implement them rather than just keeping them in the
-          brain. I'm aspiring to become a successful Entrepreneur one day.
+          <br />
+          Track record of successful projects in the tech industry. Winner of
+          prestigious software competitions showcasing innovation and technical
+          expertise. Eager to collaborate on cutting-edge projects and
+          contribute to the dynamic world of web development.
         </p>
       </CenterDiv>
 
