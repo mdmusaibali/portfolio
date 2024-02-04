@@ -31,7 +31,7 @@ const themeSlice = createSlice({
       if (!retrievedTheme) return;
       state.currentThemeName = retrievedTheme.themeName;
       state.currentColors = retrievedTheme.currentColors;
-      state.allThemes = retrievedTheme.allThemes;
+      // state.allThemes = retrievedTheme.allThemes;
     },
     toggleThemePickerIsOpen(state) {
       state.themePickerIsOpen = !state.themePickerIsOpen;
